@@ -29,8 +29,8 @@ console.log(day,month);
          port: 587,
          secure: false,
          auth: {
-           user: "yash.2125cs1155@kiet.edu",
-           pass: "sppsnxpzkmzgaetq",
+           user: "",
+           pass: "",
          },
        });
         await config.sendMail({
