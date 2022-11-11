@@ -6,10 +6,14 @@ const connectDB=require('./db/connect')
 const auto= require('./models/auto')
 const router=require("./routes/routes")
 const sendEmail=require('./sendEmail/sendMail')
+const rateLimit=require('express-rate-limit')
+
+
+
 app.use(express.json())
+// app.use('/api/v1/auto',limiter);
 app.use('/api/v1/auto',router)
 app.use('/api',sendEmail);
-
 
 app.get('/api',async(req,res)=>{
 console.log("akshat");
