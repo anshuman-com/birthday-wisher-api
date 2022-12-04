@@ -11,11 +11,11 @@ const autoSchema = new mongoose.Schema({
       },
       month:{
         type:Number,
-        required:[true,"day must be provide"]
+        required:[true,"month must be provide"]
       },
       year:{
         type:Number,
-        required:[true,"day must be provide"]
+        required:[true,"year must be provide"]
       },
       mail:{
         type:String,
